@@ -1,7 +1,14 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Promos y Billeteras</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap">
 <style>
+[hidden] { display: none !important; }
+body { margin: 0; }
 /* Layout: marco de celular centrado, tres pantallas con barra de pestañas inferior. En un teléfono ocupa todo el ancho. */
 :root {
   --bg: #EEF1EE;
@@ -142,6 +149,8 @@ h3 { margin: 6px 0 0; font-size: 12px; letter-spacing: 0.06em; text-transform: u
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
+</head>
+<body>
 <div class="stage">
   <div class="device" id="device">
     <header class="appbar">
@@ -364,3 +373,5 @@ var h0 = location.hash.replace('#', '');
 if (SCREENS.indexOf(h0) > -1) state.screen = h0;
 render();
 </script>
+</body>
+</html>
